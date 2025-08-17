@@ -11,3 +11,6 @@ iniciar entorno: usar la devolucion del comando anterior
 usar pyinstaller: uv pip install pyinstaller
 
 compilar: pyinstaller --onefile --hidden-import pyodbc main.py
+
+## Importante:
+Recordar que el config.mock.ini es un mock como tal, hay que crear un ´config.ini´ usando ese como base
