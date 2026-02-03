@@ -1,20 +1,8 @@
-import os
-import sys
-from configparser import ConfigParser
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL
 from sqlalchemy.exc import SQLAlchemyError
 import pandas as pd
 from config_loader import load_config
-
-# def load_config():
-#     # base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-#     base_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-#     config_path = os.path.join(base_path, "config.ini")
-#     config = ConfigParser()
-#     config.read(config_path)
-#     return config["DATABASE"]
-
 
 # Database configuration
 config = load_config()
